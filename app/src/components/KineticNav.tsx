@@ -120,7 +120,10 @@ export function KineticNav() {
   return (
     <>
       {/* ── Header bar ─────────────────────────────────────────────────── */}
-      <header className="fixed left-0 right-0 top-4 z-50 flex items-center justify-between px-6 lg:px-14">
+      <header
+        className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-6 lg:px-14"
+        style={{ paddingTop: 'calc(env(safe-area-inset-top) + 1rem)' }}
+      >
         {/* Logo */}
         <Link
           to="/"
@@ -211,7 +214,9 @@ export function KineticNav() {
             </div>
 
             {/* Menu content */}
-            <div className="relative z-10 flex h-full flex-col justify-between px-8 pb-10 pt-28 md:px-16 lg:px-24">
+            <div className="relative z-10 flex h-full flex-col justify-between px-8 pt-28 md:px-16 lg:px-24"
+              style={{ paddingBottom: 'calc(env(safe-area-inset-bottom) + 2.5rem)' }}
+            >
               {/* Primary nav items */}
               <nav aria-label="Menu" className="mt-4">
                 <ul className="space-y-1">
